@@ -1,0 +1,35 @@
+@import "./color.scss";
+@import "./size.scss";
+
+// 
+// Global Attribute
+//
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $black;
+}
+
+html {
+    font-size: 16px;
+}
+
+// 
+// Layout
+// col-i  i from 1 to 10
+// col-1 represent: col width = row width * 10%
+//
+.m-row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    @for $i from 1 through 10 {
+        .m-col-#{$i} {
+            width: #{$i*10+"%"};
+        }
+    }
+}

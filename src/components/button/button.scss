@@ -1,0 +1,37 @@
+@import "../../scss/index.scss";
+.m-btn {
+    border: none;
+}
+
+// 
+// Btn Size Definition
+// 
+@each $key, $value in $btn-size {
+    .m-btn.#{$key} {
+        width: #{$value + "rem"};
+        height: #{$value * 0.32 + "rem"};
+        font-size: #{$value * 0.16 + "rem"}
+    }
+}
+
+// 
+// Btn Color Definition
+// 
+@each $key, $value in $colors {
+    .m-btn.#{$key} {
+        background-color: $value;
+        @if $key == default {
+            color: $black;
+        }
+        @else {
+            color: white;
+        }
+    }
+}
+
+// 
+// Btn Style Definition
+// 
+.m-btn.circular {
+    border-radius: 0.2rem;
+}

@@ -1,0 +1,25 @@
+$light:             #EEEEEE;
+$light-grey:        #BDBDBD;
+$grey:              #888;
+$dark-grey:         #616161;
+$black:             #393939;
+
+$danger:            #FF3434;
+$danger-active:     #ED1111;
+
+$primary:           #15ABFF;
+$primary-active:    #007ED9;
+
+$warning:           #FFB800;
+$warning-active:    #F79400;
+
+$disabled:          $grey;
+$default:           $light;
+
+$colors: (
+    default: $default,
+    disabled: $disabled,
+    primary: $primary,
+    danger: $danger,
+    warning: $warning
+)

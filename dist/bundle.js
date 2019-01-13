@@ -1,0 +1,1 @@
+var func=function(){console.log("[func] app.js is running ... ")};function add(n,o){var e,r;return"number"==typeof n&&"number"==typeof o||(e=parseFloat(n),r=parseFloat(o)),(e+r).toFixed(2)}
